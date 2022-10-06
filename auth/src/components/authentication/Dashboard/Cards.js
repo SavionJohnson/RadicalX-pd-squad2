@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Dashboard.css"
+import "./Components_css/Cards.css"
 
 function Cards() {
     return (
@@ -26,8 +26,18 @@ function Cards() {
                     </div>
                 </div>
                 <div className="role">
-                    <div className="text">
+                    <div className="text"> 
                         Product Developer
+                    </div>
+                </div>
+                <div className="role">
+                    <div className="text">
+                        Product Manager
+                    </div>
+                </div>
+                <div className="role">
+                    <div className="text">
+                        Product Manager
                     </div>
                 </div>
             </div>

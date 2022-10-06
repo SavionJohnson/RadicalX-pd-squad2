@@ -12,8 +12,13 @@ if the UI of dashboard does not look good from your side follow these simple ste
 In `tailwind.config.css`
 Paste the below code in the `content:` array.
 
-content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ]
+`content: ["./src/**/*.{js,jsx,ts,tsx}", ]`
+
+# step 4
+In `src/index.css` paste the below lines of code
+
+`@tailwind base;`
+`@tailwind components;`
+`@tailwind utilities;`
 
 # THEN YOU ARE GOOD TO GO, THANK YOU.

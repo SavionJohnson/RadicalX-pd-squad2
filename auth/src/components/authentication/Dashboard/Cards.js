@@ -1,7 +1,8 @@
 import React from 'react';
 import "./Components_css/Cards.css"
 
-function Cards() {
+function Cards(props) {
+    const extendedRoleString = props.role.split(' ').slice(0,2).join(' ')+'...';
     return (
         <div className="card">
             <div className="topframe">
@@ -22,22 +23,7 @@ function Cards() {
             <div className="bottomframe">
                 <div className="role">
                     <div className="text">
-                        Product Manager
-                    </div>
-                </div>
-                <div className="role">
-                    <div className="text"> 
-                        Product Developer
-                    </div>
-                </div>
-                <div className="role">
-                    <div className="text">
-                        Product Manager
-                    </div>
-                </div>
-                <div className="role">
-                    <div className="text">
-                        Product Manager
+                        {props.role.length >=17? extendedRoleString : props.role}
                     </div>
                 </div>
             </div>

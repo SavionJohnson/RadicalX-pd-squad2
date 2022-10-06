@@ -185,6 +185,7 @@
     /* RadicallX-Black-Logo 1 */
     width: 160px;
     height: 32px;
+    display: flex;
 
     background: url(../images/RadicallX-Black-Logo.png);
 

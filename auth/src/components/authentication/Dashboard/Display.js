@@ -15,8 +15,7 @@ function Display(props) {
                 </div>
             </div>
             <div className="bottom">
-                <Cards />
-                <Cards />
+                <Cards role={'product developer & web developer'}/>
             </div>
         </div>
     )

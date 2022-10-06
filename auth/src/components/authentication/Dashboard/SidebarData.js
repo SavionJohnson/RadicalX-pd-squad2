@@ -15,35 +15,35 @@ import apprenticeshipsH_icon from'./images/Highlighted_icons/ApprenticeshipsH.pn
 export const SidebarData = [
     {
         title: "Dashboard",
-        link: "/Dashboard",
+        link: "",
         image: Dashboard_icon,
         image2: DashboardH_icon
 
     },
     {
         title: "Apprenticeships",
-        link: "/Apprenticeships",
+        link: "/dashboard",
         image: apprenticeships_icon,
         image2: apprenticeshipsH_icon
 
     },
     {
         title: "Internships",
-        link: "/Internships",
+        link: "/dashboard/Internships",
         image: internships_icon,
         image2: internshipsH_icon
 
     },
     {
         title: "Jobs",
-        link: "/Jobs",
+        link: "/dashboard/Jobs",
         image:jobs_icon,
         image2: jobsH_icon
 
     },
     {
         title: "Settings",
-        link: "/Settings",
+        link: "/dashboard/Settings",
         image: settings_icon,
         image2: settingsH_icon
 

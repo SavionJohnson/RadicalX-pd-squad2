@@ -9,7 +9,7 @@ import ProtectedRoute from './components/authentication/ProtectedRoute';
 
 function App() {
   return (
-    <div>
+    <>
       <AuthContextProvider>
         <Routes>
           <Route path='/' element={<Login />} />
@@ -18,14 +18,16 @@ function App() {
             path='/dashboard'
             element={
               <ProtectedRoute>
+              <div className='App' >
                 <Dashboard />
+              </div>
               </ProtectedRoute>
             }
           />
         </Routes>
       </AuthContextProvider>
     
-    </div>
+    </>
   );
 }
 

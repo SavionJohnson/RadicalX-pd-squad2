@@ -1,16 +1,16 @@
-import Dashboard_icon from './images/Dashboard_icon.png'
-import internships_icon from './images/book.png'
-import jobs_icon from './images/briefcase.png'
-import settings_icon from './images/setting-2.png'
-import apprenticeships_icon from './images/apprenticeship.png'
+import Dashboard_icon from '../../../images/Dashboard_icon.png'
+import internships_icon from '../../../images/book.png'
+import jobs_icon from '../../../images/briefcase.png'
+import settings_icon from '../../../images/setting-2.png'
+import apprenticeships_icon from '../../../images/apprenticeship.png'
 
 /*Highlighted Icons*/
 
-import DashboardH_icon from './images/Highlighted_icons/Dashboard_iconH.png'
-import internshipsH_icon from './images/Highlighted_icons/bookH.png'
-import jobsH_icon from './images/Highlighted_icons/briefcaseH.png'
-import settingsH_icon from './images/Highlighted_icons/setting-2H.png'
-import apprenticeshipsH_icon from'./images/Highlighted_icons/ApprenticeshipsH.png'
+import DashboardH_icon from '../../../images/Highlighted_icons/Dashboard_iconH.png'
+import internshipsH_icon from '../../../images/Highlighted_icons/bookH.png'
+import jobsH_icon from '../../../images/Highlighted_icons/briefcaseH.png'
+import settingsH_icon from '../../../images/Highlighted_icons/setting-2H.png'
+import apprenticeshipsH_icon from'../../../images/Highlighted_icons/ApprenticeshipsH.png'
 
 export const SidebarData = [
     {

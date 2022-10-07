@@ -1,15 +1,21 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { /*Link,*/ useNavigate } from "react-router-dom";
 import { UserAuth } from "../../../context/AuthContext";
 import logo from "../../../assets/RadicallX-Black-Logo 1.png";
 import { auth } from "../../../firebase";
-import { sendPasswordResetEmail } from "firebase/auth";
+import {
+  browserLocalPersistence,
+  browserSessionPersistence,
+  sendPasswordResetEmail,
+  setPersistence,
+} from "firebase/auth";
 import "./Login.css";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [rememberMe, setRememberMe] = useState(true);
   const navigate = useNavigate();
   const { signIn } = UserAuth();
 
@@ -27,6 +33,28 @@ export default function Login() {
     }
   };
 
+  const handleChecked = () => {
+    // Box is checked because google default is to persist and remember user
+    setRememberMe(!rememberMe);
+    setPersistence(
+      rememberMe
+        ? (auth, browserLocalPersistence)
+        : (auth, browserSessionPersistence)
+    )
+      .then(() => {
+        // Session: Existing and future Auth states are now persisted in the current
+        // session only. Closing the window would clear any existing state even
+        // if a user forgets to sign out.
+      })
+      .catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage);
+        alert(errorCode, errorMessage);
+      });
+  };
+
   const forgotPassword = () => {
     sendPasswordResetEmail(auth, email)
       .then(() => {
@@ -35,7 +63,6 @@ export default function Login() {
         // ..
       })
       .catch((error) => {
-        const errorCode = error.code;
         const errorMessage = error.message;
         alert(errorMessage);
         console.log(errorMessage);
@@ -48,11 +75,10 @@ export default function Login() {
       <div className="left"></div>
 
       <div className="right">
-        <img className="logoImage" src={logo} alt="Logo" />
         <form className="signin" onSubmit={handleSubmit}>
-          <h2 className="title">Login</h2>
+          <img className="logoImage" src={logo} alt="Logo" />
           <div className="form">
-            {/* <label className="label">Email</label> */}
+            <h2 className="title">Login</h2>
             <input
               onChange={(e) => setEmail(e.target.value)}
               className="input"
@@ -61,7 +87,6 @@ export default function Login() {
             />
           </div>
           <div className="form">
-            {/* <label className="label">Password</label> */}
             <input
               onChange={(e) => setPassword(e.target.value)}
               className="input"
@@ -70,15 +95,24 @@ export default function Login() {
             />
           </div>
           <div className="content">
-            <p className="flex items-center">
-              <input className="mr-2" type="checkbox" /> Remember Me
-            </p>
+            <div>
+              <label className="checkText">
+                <input
+                  type="checkbox"
+                  checked={rememberMe}
+                  onChange={handleChecked}
+                />
+                Remember Me
+              </label>
+            </div>
             {/* This is not a feature on the Figma board and is not part of ClickUp Tasks
             for this week */}
             {/* <Link to="/signup" className="underline">
               <p>Create an account</p>
             </Link> */}
-            <button onClick={forgotPassword}>Forgot Password?</button>
+            <button className="pwText" onClick={forgotPassword}>
+              Forgot Password?
+            </button>
           </div>
           <button className="button">Login</button>
         </form>

@@ -29,21 +29,21 @@ export const SidebarData = [
     },
     {
         title: "Internships",
-        link: "/dashboard/Internships",
+        link: "/dashboard/internships",
         image: internships_icon,
         image2: internshipsH_icon
 
     },
     {
         title: "Jobs",
-        link: "/dashboard/Jobs",
+        link: "/dashboard/jobs",
         image:jobs_icon,
         image2: jobsH_icon
 
     },
     {
         title: "Settings",
-        link: "/dashboard/Settings",
+        link: "/dashboard/settings",
         image: settings_icon,
         image2: settingsH_icon
 

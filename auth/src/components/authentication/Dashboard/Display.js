@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Components_css/Dashboard.css"
 import Cards from './Cards';
-import addButton from './images/Add_button.png'
+import addButton from '../../../images/Add_button.png'
 function Display(props) {
     return (
         <div className="DisplayCards">

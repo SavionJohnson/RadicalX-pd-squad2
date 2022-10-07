@@ -3,7 +3,7 @@ Hello squad!!!
 if the UI of dashboard does not look good from your side; follow these simple steps;
 
 # step1
-`npm i -D tailwindcss autoprefixer postcss`
+`npm install -D tailwindcss postcss autoprefixer`
 
 # step 2
 `npx tailwindcss init -p` -> after this completes, you will see two files named `postcss.config.js` & `tailwind.config.js`

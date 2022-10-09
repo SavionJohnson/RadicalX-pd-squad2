@@ -1,0 +1,48 @@
+.navbarContainer {
+    height: 50px;
+    width: 100%;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    margin-top: 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.364);
+  
+  }
+
+  .navLeft {
+    flex: 4;
+  }
+
+  .navCenter {
+    flex: 3;
+  }
+
+  .navMid {
+    flex:3 ;
+  }
+
+  .navRight {
+    flex:2 ;
+  }
+  .navRightend {
+    flex: 3;
+    text-align: right;
+    
+  }
+
+  .navLeft Button, .navCenter Button, .navMid Button, .navRight Button, .navRightend button {
+    color: gray;
+  }
+
+  .navRight button:hover,.navCenter Button:hover, .navMid Button:hover, .navRight Button:hover, .navLeft button:hover, .navRightend button:hover{
+    color: #793EF5
+  }
+
+  /* .navRight button:active,.navCenter Button:active, .navMid Button:active, .navRight Button:active, .navLeft Button:active, .navRightend Button:active{
+    color: purple;
+  } */
+
+ 

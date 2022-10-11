@@ -18,7 +18,7 @@ function App() {
             path='/dashboard'
             element={
               <ProtectedRoute>
-              <div className='App' >
+              <div className='Dashboard' >
                 <Dashboard />
               </div>
               </ProtectedRoute>

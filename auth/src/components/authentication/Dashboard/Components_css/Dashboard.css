@@ -1,4 +1,5 @@
 /* Dashboard Right Section Begin */
+
 .DisplayCards {
     display: flex;
     flex-direction: column;
@@ -7,8 +8,9 @@
     gap: 32px;
 
     position: absolute;
-    width: 1135px;
-    height: 298px;
+    /* width: 1135px;
+    height: 298px; */
+    
     left: 311px;
     top: 57px;
 }
@@ -24,7 +26,6 @@
 
     width: 1135px;
     height: 44px;
-
 
     /* Inside auto layout */
     flex: none;
@@ -56,6 +57,8 @@
 }
 
 .DisplayCards .top .button {
+object-position: right top;
+
     display: flex;
     flex-direction: row;
     justify-content: flex-end;

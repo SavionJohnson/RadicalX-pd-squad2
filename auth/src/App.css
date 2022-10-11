@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');
-.App {
+
+.Dashboard {
   position: relative;
-  width: 1512px;
-  height: 982px;
-  background: #F1F4F8;
-}
-*{
   margin: 0;
-  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #F1F4F8;
 }

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 
 
-
 /* Sidebar Begin */
 .Sidebar {
     display: flex;
@@ -13,7 +12,7 @@
 
     position: absolute;
     width: 237px;
-    height: 950px;
+    height: 96vh;
     left: 16px;
     top: 16px;
 

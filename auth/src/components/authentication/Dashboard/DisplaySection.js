@@ -8,7 +8,6 @@ function DisplaySection() {
             <div className="top">
                 <h1 className="title">Apprenticeship</h1>
                 <div className="button">
-                    {/* Create New Apprenticeship button icon goes here */}
                     <div className="text">
                         Create New Apprenticeship
                     </div>
@@ -17,6 +16,7 @@ function DisplaySection() {
             <div className="bottom">
                 <Cards/>
             </div>
+            
         </div>
     )
 }

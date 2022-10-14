@@ -4,13 +4,14 @@
     width: 600px;
     border-radius: 24px;
     padding: 24px;
+    position: absolute;
     left: 347px;
     right: 456px;
     gap: 20px;
     height: 388px;
     box-shadow: 0px 24px 34px rgba(0, 0, 0, 0.12);
-    position: absolute;
     box-sizing: border-box;
+    background-color: #FFFFFF;
     border: 1px solid #793EF5;
 }
 
@@ -22,11 +23,10 @@
     padding: 0px;
     gap: 16px;
     height: 36px;
-    width: 552px
+    width: 552px;
 }
 
 .card-title {
-    /* width: 162px; */
     height: 24px;
 
     font-family: 'Space Grotesk';
@@ -87,7 +87,7 @@
     flex-grow: 0;
 }
 
-.card-buttons .close {
+.card-buttons .icons {
     width: 24px;
     height: 24px;
 
@@ -98,7 +98,7 @@
     flex-grow: 0;
 }
 
-.icon {
+.profile {
     width: 80px;
     height: 80px;
     margin-top: 26px;
@@ -116,7 +116,8 @@
 
 .input_text {
     box-sizing: border-box;
-
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
     /* Auto layout */
     display: flex;
     flex-direction: row;
@@ -140,4 +141,20 @@
     align-self: stretch;
     flex-grow: 0;
     z-index: 3;
+}
+
+.picture-icon {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 82px;
+    top: 137px;
+}
+
+.form{
+    margin-top: 14px;
+}
+
+.input_form{
+    margin: 20px;
 }

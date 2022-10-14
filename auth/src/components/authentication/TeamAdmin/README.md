@@ -10,6 +10,7 @@ if the UI of dashboard does not look good from your side; follow these simple st
 # step 3
 
 Paste the below string in the `content[],` array, which you will see in `tailwind.config.js`.
+
 `"./src/**/*.{js,jsx,ts,tsx}"`
 
 # step 4

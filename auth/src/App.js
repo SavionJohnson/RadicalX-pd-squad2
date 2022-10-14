@@ -9,6 +9,7 @@ import ProtectedRoute from './components/authentication/ProtectedRoute';
 
 function App() {
   return (
+    <>
     <div>
       <AuthContextProvider>
         <Routes>
@@ -18,6 +19,9 @@ function App() {
             path='/dashboard'
             element={
               <ProtectedRoute>
+              <div className='Dashboard' >
+                <Dashboard />
+              </div>
                 <Dashboard />
               </ProtectedRoute>
             }
@@ -25,6 +29,7 @@ function App() {
         </Routes>
       </AuthContextProvider>
     
+    </>
     </div>
   );
 }

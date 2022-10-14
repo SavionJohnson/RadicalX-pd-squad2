@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+
+/* Sidebar Begin */
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 34px 20px;
+    gap: 34px;
+
+    position: absolute;
+    width: 237px;
+    height: 96vh;
+    left: 16px;
+    top: 16px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 12px 34px rgba(0, 0, 0, 0.04);
+    border-radius: 24px;
+}
+
+.SidebarFrame {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+
+    width: 197px;
+    height: 370px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+.SidebarList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    margin-top: 12px;
+
+    width: 197px;
+    height: 288px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.SidebarList .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+
+
+    width: 197px;
+    height: 48px;
+
+    border-radius: 16px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+ .SidebarList #active {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+
+    width: 197px;
+    height: 48px;
+
+    background: rgba(102, 95, 239, 0.16);
+    /* Purple */
+
+    border: 1px solid #793EF5;
+    border-radius: 16px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0
+}
+
+.SidebarList .icon {
+    /* dashboard-3 */
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    left: 12px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.SidebarList .text {
+    /* Text */
+    width: 67px;
+    height: 35px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 6px;
+
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.3px;
+    font-feature-settings: 'liga' off;
+
+    /* Dark */
+    color: #1E1E1E;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+
+.SidebarProfile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+
+    width: 152px;
+    height: 50px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.SidebarProfile .icon {
+    width: 50px;
+    height: 50px;
+
+    /* Gray 50 */
+
+    background: #E2E6EB;
+    border-radius: 16px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.radicalx_logo {
+    /* RadicallX-Black-Logo 1 */
+    width: 160px;
+    height: 32px;
+    display: flex;
+
+    background: url(../../../../images/RadicallX-Black-Logo.png);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Sidebar End */

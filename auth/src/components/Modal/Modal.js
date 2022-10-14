@@ -101,6 +101,7 @@ export default function Modal() {
               <Select
                 placeholder="Select Location"
                 options={locationOptions}
+                isMulti
               ></Select>
             </form>
           </div>

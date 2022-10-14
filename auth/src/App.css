@@ -7,3 +7,7 @@
   height: 100vh;
   background: #F1F4F8;
 }
+*{
+  margin: 0;
+  padding: 0;
+}

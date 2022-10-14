@@ -1,5 +1,5 @@
 .titles {
-    width: 234px;
+    width: 300px;
     height: 24px;
     font-family: 'Space Grotesk';
     font-style: normal;
@@ -9,7 +9,6 @@
     letter-spacing: 0.3px;
     color: #1E1E1E;
 }
-
 
 body.active-modal {
     overflow-y: hidden;

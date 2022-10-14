@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./Modal.css";
-// import { Dropdown, DropdownButton } from "react-bootstrap";
-// import "react-dropdown/style.css";
 import Select from "react-select";
+import { roleOptions, skillOptions, locationOptions } from "./options";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Modal() {
@@ -13,28 +12,21 @@ export default function Modal() {
     setModal(!modal);
   };
 
-  const roleOptions = [
-    { label: "iOS Developer", value: "iosDev" },
-    { label: "Android Developer", value: "androidDev" },
-    { label: "Full Stack Developer", value: "fullStackDev" },
-    { label: "Back-end Developer", value: "backEndDev" },
-    { label: "Front-end Developer", value: "frontEndDev" },
-  ];
+  const roleChange = (selectedRole) => {
+    console.log("roleChange", selectedRole);
+  };
 
-  const skillOptions = [
-    { label: "Swift", value: "swift" },
-    { label: "iOS", value: "iOS" },
-    { label: "Objective-C", value: "objC" },
-    { label: "ARM", value: "arm" },
-  ];
+  const skillChange = (selectedSkill) => {
+    console.log("skillChange", selectedSkill);
+  };
 
-  const locationOptions = [
-    { label: "North America", value: "northAmerica" },
-    { label: "South America", value: "southAmerica" },
-    { label: "Europe", value: "europe" },
-    { label: "Africa", value: "africa" },
-    { label: "Asia", value: "asia" },
-  ];
+  const softSkillChange = (selectedSoftSkill) => {
+    console.log("softSkillChange", selectedSoftSkill);
+  };
+
+  const locationChange = (selectedLocation) => {
+    console.log("locationChange", selectedLocation);
+  };
 
   // keeps background from scrolling when the modal is open
   modal
@@ -64,12 +56,13 @@ export default function Modal() {
             </div>
 
             <form>
-              <div>
-                <Select
-                  placeholder="Select Role"
-                  options={roleOptions}
-                ></Select>
-              </div>
+              <Select
+                className="select-box"
+                placeholder="Select Role"
+                options={roleOptions}
+                onChange={roleChange}
+              ></Select>
+
               <div>
                 <label className="titles">
                   Role Description
@@ -81,14 +74,18 @@ export default function Modal() {
               <Select
                 placeholder="Select Skills"
                 options={skillOptions}
+                onChange={skillChange}
                 isMulti
+                closeMenuOnSelect={false}
               ></Select>
 
               <div className="titles">Complimentary Skills (Select any 3)</div>
               <Select
                 placeholder="Select Skills"
                 options={skillOptions}
+                onChange={softSkillChange}
                 isMulti
+                closeMenuOnSelect={false}
               ></Select>
               <div>
                 <label className="titles">
@@ -101,7 +98,9 @@ export default function Modal() {
               <Select
                 placeholder="Select Location"
                 options={locationOptions}
+                onChange={locationChange}
                 isMulti
+                closeMenuOnSelect={false}
               ></Select>
             </form>
           </div>

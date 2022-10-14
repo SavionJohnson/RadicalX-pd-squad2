@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+.Card {
+    width: 600px;
+    border-radius: 24px;
+    padding: 24px;
+    left: 347px;
+    right: 456px;
+    gap: 20px;
+    height: 388px;
+    box-shadow: 0px 24px 34px rgba(0, 0, 0, 0.12);
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid #793EF5;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    height: 36px;
+    width: 552px
+}
+
+.card-title {
+    /* width: 162px; */
+    height: 24px;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    /* identical to box height, or 120% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.3px;
+    font-feature-settings: 'liga' off;
+
+    color: #1E1E1E;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.card-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+
+    height: 36px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.card-buttons #save {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 29px;
+
+    height: 36px;
+
+    /* Purple */
+    background: #793EF5;
+    border-radius: 8px;
+    color: #FFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.card-buttons .close {
+    width: 24px;
+    height: 24px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    margin-top: 26px;
+
+    /* Gray 50 */
+    background: #E2E6EB;
+    border-radius: 20px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+.input_text {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 12px 12px 16px;
+    gap: 10px;
+
+    width: 552px;
+    height: 48px;
+
+    /* Snow */
+    background: #FFFFFF;
+
+    /* Field Stroke */
+    border: 1px solid #CECECE;
+    border-radius: 12px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 3;
+}

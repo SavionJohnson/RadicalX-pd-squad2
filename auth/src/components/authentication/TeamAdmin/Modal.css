@@ -151,10 +151,11 @@
     top: 137px;
 }
 
-.form{
+.form {
     margin-top: 14px;
+    flex: wrap;
 }
 
-.input_form{
-    margin: 20px;
+.input-form {
+    margin: 7px;
 }

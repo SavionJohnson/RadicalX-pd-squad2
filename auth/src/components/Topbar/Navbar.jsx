@@ -27,7 +27,7 @@ export default function Navbar() {
       </div>
 
       <div className="navRightend">
-      <Button sx={{ textTransform: 'capitalize', m: 1 }}  startIcon={<CircleOutlinedIcon />}>Team Admin</Button>
+      <Button sx={{ textTransform: 'capitalize', m: 1 }}  startIcon={<CircleOutlinedIcon />}>Timeline</Button>
 
   
       </div>

@@ -29,13 +29,13 @@ export default function Modal(props) {
                 {/* input Form */}
                 <ul className='form'>
                     <li className='input-form'>
-                        <input type="name" className='input_text' id='nameIcon' placeholder='Name'/>
+                        <input type="name" className='input_text NameIcon' placeholder='Name'/>
                     </li>
                     <li className='input-form'>
-                        <input type="email" className='input_text'id='emailIcon' placeholder='Email Address' />
+                        <input type="email" className='input_text EmailIcon' placeholder='Email Address' />
                     </li>
                     <li className='input-form'>
-                        <input type="Link" className='input_text' id='linkIcon' placeholder='LinkedIn URL (optional) ' />
+                        <input type="Link" className='input_text LinkIcon' placeholder='LinkedIn URL (optional) ' />
                     </li>
                 </ul>
             </div>

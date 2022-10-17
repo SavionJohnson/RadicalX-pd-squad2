@@ -142,14 +142,36 @@
     align-self: stretch;
     flex-grow: 0;
     z-index: 3;
-    /* background Icon  */
-    background-image : url("./icons/profile.png");
-    position: left;
-    background-repeat: no-repeat;
-    background-position-y:center;
-    padding-left: 30px;
-    background-position-x: 12px, 0;
 }
+
+.NameIcon{
+     /* background Icon  */
+     background-image : url("./icons/profile.png");
+     position: left;
+     background-repeat: no-repeat;
+     background-position-y:center;
+     padding-left: 30px;
+     background-position-x: 12px, 0;
+}
+.EmailIcon{
+     /* background Icon  */
+     background-image : url("./icons/sms.png");
+     position: left;
+     background-repeat: no-repeat;
+     background-position-y:center;
+     padding-left: 30px;
+     background-position-x: 12px, 0;
+}
+.LinkIcon{
+     /* background Icon  */
+     background-image : url("./icons/link.png");
+     position: left;
+     background-repeat: no-repeat;
+     background-position-y:center;
+     padding-left: 30px;
+     background-position-x: 12px, 0;
+}
+
 
 .picture-icon {
     position: absolute;

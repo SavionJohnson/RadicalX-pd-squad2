@@ -1,7 +1,7 @@
 import React from 'react'
 import './Modal.css'
 import close_icon from './icons/close.png'
-import profile_icon from './icons/profile.png'
+// import profile_icon from './icons/profile.png'
 import picture_icon from './icons/blue_picture.png'
 
 export default function Modal(props) {
@@ -29,13 +29,13 @@ export default function Modal(props) {
                 {/* input Form */}
                 <ul className='form'>
                     <li className='input-form'>
-                        <input type="name" className='input_text' placeholder='Name' />
+                        <input type="name" className='input_text' id='nameIcon' placeholder='Name'/>
                     </li>
                     <li className='input-form'>
-                        <input type="email" className='input_text' placeholder='Email Address' />
+                        <input type="email" className='input_text'id='emailIcon' placeholder='Email Address' />
                     </li>
                     <li className='input-form'>
-                        <input type="Link" className='input_text' placeholder='LinkedIn URL (optional) ' />
+                        <input type="Link" className='input_text' id='linkIcon' placeholder='LinkedIn URL (optional) ' />
                     </li>
                 </ul>
             </div>

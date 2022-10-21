@@ -5,6 +5,7 @@ import Dashboard from './components/authentication/Dashboard/Dashboard';
 import { Route, Routes } from 'react-router-dom';
 import { AuthContextProvider } from './context/AuthContext';
 import ProtectedRoute from './components/authentication/ProtectedRoute';
+import Timeline from './components/timeline/Timeline';
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
             path='/dashboard'
             element={
               <ProtectedRoute>
-                <Dashboard />
+                <Timeline />
               </ProtectedRoute>
             }
           />

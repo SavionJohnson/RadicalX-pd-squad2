@@ -1,8 +1,9 @@
 import { auth } from "../../../firebase";
 import { sendPasswordResetEmail } from "firebase/auth";
 import React, { useState } from "react";
-import logo from "../../../assets/RadicalX-Black-Logo 1.png";
 import { useNavigate } from "react-router-dom";
+import logo from "../../../assets/RadicalX-Black-Logo 1.png";
+import sms from "../../../assets/sms.svg";
 import "./Login.css";
 
 export default function ForgotPassword() {
@@ -27,16 +28,17 @@ export default function ForgotPassword() {
   };
   return (
     <div className="container">
-      <div className="left"></div>
+      <div className="left-container"></div>
 
-      <div className="right">
-        <img className="logoImage" src={logo} alt="Logo" />
-        <div className="signin">
-          <h2 className="logo">Forgot Password</h2>
-          <div className="form">
+      <div className="right-container">
+        <img className="logo-image" src={logo} alt="Logo" />
+        <div className="form">
+          <span className="header-text">Forgot Password</span>
+          <div className="input-container">
+            <img className="input-icon" src={sms} alt="emailIcon" />
             <input
               onChange={(e) => setEmail(e.target.value)}
-              className="input"
+              className="text-input"
               type="email"
               placeholder="Email"
             />

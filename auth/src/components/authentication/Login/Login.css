@@ -1,229 +1,213 @@
 .container {
-    display: flex;
+    background-color: #ffffff;
     width: 100%;
-    height: 100vh;
-}
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
 
-.left {
+  .left-container{
     display: flex;
     flex: 1;
     background-color: #793ef5;
-}
-
-.right {
-    display: flex;
-    flex: 1;
+    height: 100vh;
+  }
+  
+  .right-container {
     background-color: #ffffff;
+    height: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.signin {
-    padding: 1rem;
-    width: 60%;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    font-weight: 700;
-    text-align: center;
-}
-
-.logoImage {
-    position: absolute;
+    flex-basis: 50%;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  
+  .logo-image {
+    background-size: cover;
+    background-position: center;
     width: 200px;
     height: 40px;
-    top: 50px;
-}
-
-.logo {
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    align-self: flex-start;
-
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 24px;
-}
-
-.form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    flex-direction: column;
-}
-
-.label {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-}
-
-.input {
-    /* Text field */
-
-    box-sizing: border-box;
-
-    /* Auto layout */
-
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 10px 16px;
-    gap: 8px;
-
-    width: 360px;
-    height: 48px;
-
-    /* Base/Secondary */
-
-    background: #F5F5F7;
-    /* Field Stroke */
-
-    border: 1px solid #CECECE;
-    border-radius: 16px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
-    /* Input Text */
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.3px;
-    font-feature-settings: 'liga' off;
-    color: rgba(47, 48, 49, 0.54);
-}
-
-.pwText {
-    border: none;
-    width: 146px;
-    height: 24px;
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.75rem;
-    /* identical to box height, or 150% */
-    text-align: center;
-    letter-spacing: 0.4px;
-    font-feature-settings: 'liga' off;
-    /* Purple */
-    color: #793EF5;
-    background-color: #FFFFFF;
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-.pwText:hover {
-    text-decoration: underline;
-}
-
-.button {
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    background-color: #4f46e5;
-    color: #ffffff;
-    width: 50%;
-    border-width: 1px;
-
-    /* Auto layout */
-    align-items: center;
-    padding: 10px 16px;
-    gap: 29px;
-
-    width: 360px;
-    height: 48px;
-
-    /* Purple */
-
-    background: #793EF5;
-    border-radius: 16px;
-
-    font-family: 'Space Grotesk';
-    font-style: normal;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: 172px;
+    padding-top: 20px;
+    object-fit: cover;
+  }
+  
+  .header-text {
+    font-size: 1.5rem;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-family: 'Space Grotesk';
+    line-height: 24px;
+    color: #1e1e1e;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    margin-left: 150px;
+  }
 
-    text-align: center;
-    letter-spacing: 0.4px;
-    font-feature-settings: 'liga' off;
-
-    color: #FFFFFF;
-}
-
-.button:hover {
-    background-color: #6b28d9;
-}
-
-.content {
+  .form {
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+    flex-basis: 50%;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  
+  .input-container {
+    border-radius: 16px;
+    background-color: #f5f5f7;
+    border: 1px solid #cecece;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 5%;
+    padding-left: 16px;
+    margin-left: 4px;
+    margin-bottom: 12px;
+  }
+  
+  .input-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    object-fit: cover;
+  }
 
-.label2 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    padding-right: 4rem;
-    font-size: 1rem;
-    line-height: 1.75rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    text-align: center;
-    letter-spacing: 0.4px;
-    font-feature-settings: 'liga' off;
-    /* Gray 3 */
-    color: #828282;
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-.underline {
-    padding-top: 0.95rem;
-    padding-bottom: 0.25rem;
-    width: 146px;
-    height: 24px;
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 600;
+  .pwreveal-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    object-fit: cover;
+    padding-right: 10px;
+  }
+  
+  .text-input {
     font-size: 16px;
-    line-height: 1.75rem;
-    /* identical to box height, or 150% */
+    font-weight: 400;
+    font-family: 'Space Grotesk';
+    line-height: 24px;
+    color: rgba(47, 48, 49, 0.54);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-left: 9px;
+    margin-top: 1px;
+    border: none;
+    background-color: #f5f5f7;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 85%;
+  }
+  
+  .options-container {
+    width: 52%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 4px;
+    margin-bottom: 22px;
+  }
+  
+  .checkbox {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    object-fit: cover;
+    align-self: center;
+    margin-right: 10px;
+  }
+  
+  .remember-text {
     text-align: center;
-    letter-spacing: 0.4px;
-    font-feature-settings: 'liga' off;
-    /* Purple */
-    color: #793EF5;
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Space Grotesk';
+    line-height: 24px;
+    color: #828282;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-self: center;
+    margin-top: 1px;
+    margin-right: 32px;
+  }
+  
+  .link-text {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Space Grotesk';
+    line-height: 24px;
+    color: #793ef5;
+  }
+  
+  .button {
+    border-radius: 16px;
+    border-color: #793ef5;
+    background-color: #793ef5;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    /* Button Text */
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Space Grotesk';
+    line-height: 20px;
+    color: #ffffff;
+    margin-top: 1px;
+  }
 
-@media screen and (min-width: 640px) {
+  .button:hover {
+    background-color: #6b28d9;
+  }
+
+  .link-text:hover {
+    color: #828282;
+  }
+
+  /* Keeps autocomplete from changing background color of text input */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #f5f5f7 inset !important;
+    box-shadow: 0 0 0 30px #f5f5f7 inset !important;
+  }
+
+  @media screen and (min-width: 640px) {
     .container {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }

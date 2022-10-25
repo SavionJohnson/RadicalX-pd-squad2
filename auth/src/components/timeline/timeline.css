@@ -1,0 +1,84 @@
+.Timeline {
+    border: 1px solid #000000;
+    display: flex;
+    flex-wrap: wrap;
+    width: 770px;
+    height: 136px;
+    background: #ffffff;
+    border: 1px solid #e2e6eb;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  
+  .Timeline:hover {
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+      border: 1px solid #665fef;
+  
+  }
+  
+  .top {
+    margin-left: 20px;
+    margin-top: 20px;
+    flex-basis: 100%;
+  }
+  
+  .Sdate {
+    flex-grow: 1;
+    margin-left: 20px;
+    width: 353px;
+    height: 48px;
+    background: #ffffff;
+    border: 1px solid #cfd3d9;
+    border-radius: 12px;
+  }
+  
+  .Enddate {
+    flex-grow: 1;
+    width: 353px;
+    height: 48px;
+    background: #ffffff;
+    border: 1px solid #cfd3d9;
+    border-radius: 12px;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+  
+  .Sdate Button,
+  .Enddate Button {
+    color: #1e1e1e;
+    font-style: normal;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.5;
+  }
+  
+  .Sdate:hover,
+  .Enddate:hover {
+    border: 1px solid #665fef;
+  }
+  
+  .top {
+    width: 66px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .CalDiv {
+    position: absolute;
+    left: 315px;
+  }
+  
+  .info-circle {
+      position: absolute;
+      right: 700px;
+  }
+  
+  
+  

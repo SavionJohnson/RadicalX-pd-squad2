@@ -1,16 +1,17 @@
-import "./App.css";
-import Login from "./components/authentication/Login/Login";
-import SignUp from "./components/authentication/SignUp/SignUp";
-import ForgotPassword from "./components/authentication/Login/ForgotPassword";
-import Dashboard from "./components/authentication/Dashboard/Dashboard";
-import { Route, Routes } from "react-router-dom";
-import { AuthContextProvider } from "./context/AuthContext";
-import ProtectedRoute from "./components/authentication/ProtectedRoute";
+import './App.css';
+import Login from './components/authentication/Login/Login';
+import SignUp from './components/authentication/SignUp/SignUp';
+import './index.css'
+import Dashboard from './components/authentication/Dashboard/Dashboard';
+import { Route, Routes } from 'react-router-dom';
+import { AuthContextProvider } from './context/AuthContext';
+import ProtectedRoute from './components/authentication/ProtectedRoute';
+import TeamAdmin from './components/authentication/TeamAdmin/TeamAdmin';
+
 
 function App() {
   return (
-    <>
-    <div>
+    <div className='w-full h-full'>
       <AuthContextProvider>
         <Routes>
           <Route path="/" element={<Login />} />
@@ -24,6 +25,7 @@ function App() {
                 <Dashboard />
               </div>
                 <Timeline />
+                <TeamAdmin/>
               </ProtectedRoute>
             }
           />

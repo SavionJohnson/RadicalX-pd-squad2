@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+
+
+
+.Card {
+    width: 600px;
+    border-radius: 24px;
+    padding: 24px;
+    position: absolute;
+    height: 388px;
+    box-shadow: 0px 24px 34px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid #793EF5;
+    background-position: center;
+    
+}
+
+.img-profile{
+    float: left;
+    position: relative;
+}
+
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    height: 36px;
+    width: 552px;
+}
+
+.card-title {
+    height: 24px;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    /* identical to box height, or 120% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.3px;
+    font-feature-settings: 'liga' off;
+
+    color: #1E1E1E;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.card-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+
+    height: 36px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.card-buttons #save {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 29px;
+
+    height: 36px;
+
+    /* Purple */
+    background: #793EF5;
+    border-radius: 8px;
+    color: #FFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.card-buttons .icons {
+    width: 24px;
+    height: 24px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.profile {
+    width: 80px;
+    height: 80px;
+    margin-top: 26px;
+
+    /* Gray 50 */
+    background: #E2E6EB;
+    border-radius: 20px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+.input_text {
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 12px 12px 35px;
+    gap: 10px;
+    
+    width: 552px;
+    height: 48px;
+
+    /* Snow */
+    background: #FFFFFF;
+
+    /* Field Stroke */
+    border: 1px solid #CECECE;
+    border-radius: 12px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 3;
+}
+
+.picture-icon {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 82px;
+    top: 137px;
+}
+
+
+.form {
+    margin-top: 14px;
+    flex: wrap;
+}
+
+.input-form {
+    margin: 7px;
+}
+
+.img-profile{
+    top:207px;
+    left: 30px;
+    position: absolute;
+}
+.img-profile2{
+    top:270px;
+    left: 30px;
+    position: absolute;
+}
+.img-profile3{
+    top:330px;
+    left: 30px;
+    position: absolute;
+}

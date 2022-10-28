@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Modal.css";
 import Select from "react-select";
 import { roleOptions, skillOptions, locationOptions } from "./options";
-// import "bootstrap/dist/css/bootstrap.min.css";
+
 
 export default function Modal() {
   // set to false because do not want to see modal at first
@@ -44,9 +44,9 @@ export default function Modal() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <div className="addrole-save-x">
-              <h2>Add Role</h2>
+              <div className="add-role">Add Role</div>
               <button
-                className="save-modal" /* onClick={ Add function to save }*/
+                className="save-modal" 
               >
                 Save
               </button>
@@ -61,11 +61,19 @@ export default function Modal() {
                 placeholder="Select Role"
                 options={roleOptions}
                 onChange={roleChange}
+                theme={(theme) => ({
+                  ...theme,
+                  borderRadius: 10,
+                  colors: {
+                    ...theme.colors,
+                    primary: '#793EF5',
+                  },
+                })}
               ></Select>
 
               <div>
                 <label className="titles">
-                  Role Description
+                  <div className="titles">Role Description</div>
                   <input className="role-description-box" type="text" />
                 </label>
               </div>
@@ -77,6 +85,14 @@ export default function Modal() {
                 onChange={skillChange}
                 isMulti
                 closeMenuOnSelect={false}
+                theme={(theme) => ({
+                  ...theme,
+                  borderRadius: 10,
+                  colors: {
+                    ...theme.colors,
+                    primary: '#793EF5',
+                  },
+                })}
               ></Select>
 
               <div className="titles">Complimentary Skills (Select any 3)</div>
@@ -86,10 +102,18 @@ export default function Modal() {
                 onChange={softSkillChange}
                 isMulti
                 closeMenuOnSelect={false}
+                theme={(theme) => ({
+                  ...theme,
+                  borderRadius: 10,
+                  colors: {
+                    ...theme.colors,
+                    primary: '#793EF5',
+                  },
+                })}
               ></Select>
               <div>
                 <label className="titles">
-                  Minimum Hours Per Week
+                <div className="titles">Minimum Hours Per Week</div>
                   <input className="minimum-hours-per-week-box" type="text" />
                 </label>
               </div>
@@ -101,6 +125,15 @@ export default function Modal() {
                 onChange={locationChange}
                 isMulti
                 closeMenuOnSelect={false}
+                menuPlacement="top"
+                theme={(theme) => ({
+                  ...theme,
+                  borderRadius: 10,
+                  colors: {
+                    ...theme.colors,
+                    primary: '#793EF5',
+                  },
+                })}
               ></Select>
             </form>
           </div>

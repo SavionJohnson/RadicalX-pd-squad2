@@ -1,3 +1,29 @@
+.add-role {
+    width: 88px;
+    height: 24px;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.3px;
+    font-feature-settings: 'liga' off;
+
+    color: #1E1E1E;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
 .titles {
     width: 300px;
     height: 24px;
@@ -8,6 +34,7 @@
     line-height: 24px;
     letter-spacing: 0.3px;
     color: #1E1E1E;
+    padding-top: 10px;
 }
 
 body.active-modal {
@@ -31,13 +58,16 @@ body.active-modal {
     bottom: 0;    
     position: fixed;  
     box-sizing: border-box;
+    border: 1px solid #793EF5;
 }
 
 .overlay {
-    background: rgba(49,49,49,0.8);
+    background: rgba(3, 2, 23, 0.3);
+    backdrop-filter: blur(7px);
 }
 
 .modal-content {
+    border-radius: 24px;
     flex-direction: column;
     align-items: flex-start;
     padding: 24px;
@@ -68,6 +98,13 @@ body.active-modal {
     width: 552px;
     height: 36px;
 
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    font-feature-settings: 'liga' off;
 
     /* Inside auto layout */
 
@@ -116,9 +153,8 @@ body.active-modal {
     gap: 10px;
     width: 552px;
     background: #FFFFFF;
-    border: 1px solid #793EF5;
+    border: 1px solid #CECECE;
     border-radius: 12px;
-
 
     max-height: 100px;
     overflow-x: hidden;
@@ -153,12 +189,17 @@ body.active-modal {
     flex-grow: 0;
 }
 
+.modal .modal-content .role-description-box:hover,
+.modal .modal-content .minimum-hours-per-week-box:hover {
+    border: 1px solid #793EF5;
+}
 
 .save-modal {
     position: absolute;
     top: 10px;
     right: 50px;
-    padding: 5px 7px;
+    padding: 8px 24px;
+    gap: 29px;
 
     width: 82px;
     height: 36px;
@@ -166,11 +207,17 @@ body.active-modal {
     /* Purple */
     background: #793EF5;
     border-radius: 8px;
+    border: none;
 
     /* Inside auto layout */
     flex: none;
     order: 0;
     flex-grow: 0;
+
+    font-family: 'Space Grotesk';
+    letter-spacing: 0.4px;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
 }
 
 .close-modal {
@@ -182,32 +229,32 @@ body.active-modal {
     width: 36px;
     height: 36px;
 
-    box-sizing: border-box;
-
-    border: 1px solid #A6ABBB;
+    background-color: #FFFFFF;
+    border: none;
 }
 
 .text {
-    width: 110px;
+    width: 234px;
     height: 24px;
-
+    
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     /* identical to box height, or 150% */
-
+    
     display: flex;
     align-items: center;
     letter-spacing: 0.3px;
     font-feature-settings: 'liga' off;
-
+    
     color: #1E1E1E;
-
-
+    
+    padding-top: 10px;
+    
     /* Inside auto layout */
-
+    
     flex: none;
     order: 0;
     flex-grow: 0;
